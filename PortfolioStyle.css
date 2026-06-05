@@ -15,7 +15,7 @@
 /* Цялата страница */
 body{
 
-    background-image: url("Снимки/Фон.png");
+    background-image: url("Фон.png");
     background-repeat: repeat;
     background-position: top left;
 
@@ -33,7 +33,7 @@ body{
     height:220px;
 
     /* Използва снимка */
-    background-image:url("Снимки/Банер1.jpg");
+    background-image:url("Банер1.jpg");
 
     /* Центрира снимката */
     background-position:center;
