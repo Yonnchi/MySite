@@ -1,0 +1,347 @@
+*{
+
+    /* Премахва автоматичните отстояния */
+    margin:0;
+
+    /* Премахва автоматичните вътрешни отстояния */
+    padding:0;
+
+    /* Размерът включва border и padding */
+    box-sizing:border-box;
+
+    font-family:'Cormorant Garamond', serif;
+}
+
+/* Цялата страница */
+body{
+
+    background-image: url("Снимки/Фон.png");
+    background-repeat: repeat;
+    background-position: top left;
+
+    /* Центрира текста */
+    text-align:center;
+
+    /* Основен шрифт */
+    font-family:'Cormorant Garamond', serif;
+}
+
+/* Горният банер */
+.banner{
+
+    /* Височина на банера */
+    height:220px;
+
+    /* Използва снимка */
+    background-image:url("Снимки/Банер1.jpg");
+
+    /* Центрира снимката */
+    background-position:center;
+
+    /* Запълва целия банер */
+    background-size:cover;
+
+    /* Да не се повтаря */
+    background-repeat:no-repeat;
+}
+
+/* Менюто */
+nav{
+
+   /* прави менюто хоризонтално подредено */
+    display:flex;
+
+    /* подравнява елементите по вертикала (по средата) */
+    align-items:center;
+
+    /* разпределя елементите равномерно по ширината */
+    justify-content:space-around;
+
+    /* фон на менюто */
+    background:#e8c5c5;
+
+    /* вътрешно разстояние */
+    padding:10px;
+
+    /* долна линия */
+    border-bottom:2px solid black;
+
+    /* сянка за ефект */
+    box-shadow:0 2px 10px rgba(0,0,0,0.25);
+}
+
+/* Всички линкове */
+nav a{
+
+    /* маха подчертаването */
+    text-decoration:none;
+
+    /* цвят на текста */
+    color:black;
+
+    /* прави текста по-голям */
+    font-size:24px;
+
+    /* прави буквите по-дебели */
+    font-weight:bold;
+
+    /* вътрешно разстояние около текста */
+    padding:15px 20px;
+
+    /* плавен ефект при hover */
+    transition:0.3s;
+}
+
+/* При посочване */
+nav a:hover{
+    transform:scale(1.1);
+
+    color:#ff7eb3;
+    
+}
+
+/* Сърчицата */
+.heart{
+
+    /* Размер */
+    font-size:70px;
+
+    /* Черен цвят */
+    color:black;
+}
+
+/* Контейнер на снимката */
+.profile{
+
+    /* Кръг */
+    border-radius:50%;
+
+    /* Скрива излизащото извън кръга */
+    overflow:hidden;
+
+    /* Черна рамка */
+    border:8px solid black;
+
+    /* Размер */
+    width:240px;
+
+    /* Размер */
+    height:240px;
+
+    /* Повдига снимката */
+    margin-top:-130px;
+
+    /* Фон ако няма снимка */
+    background:white;
+}
+
+/* Самата снимка */
+.profile img{
+
+    /* Запълва контейнера */
+    width:100%;
+
+    /* Запълва контейнера */
+    height:100%;
+
+    /* Реже снимката красиво */
+    object-fit:cover;
+}
+
+/* Приветствена секция */
+.welcome{
+
+    margin:20px auto;
+    padding:10px;
+}
+
+.welcome h1{
+
+    font-size:50px;
+    margin-bottom:25px;
+    color:black;
+}
+
+.welcome p{
+
+    font-size:26px;
+    line-height:1.6;
+    color:#fffff;
+}
+
+.cv-section{
+
+    /* Използва Flexbox */
+    display:flex;
+
+    /* Центрира ромба по хоризонтала */
+    justify-content:center;
+
+    /* Центрира по вертикала */
+    align-items:center;
+
+    /* Разстояние отгоре */
+    margin-top:100px;
+}
+
+/* Самият ромб */
+.diamond{
+
+    /* Ширина */
+    width:300px;
+
+    /* Височина */
+    height:300px;
+
+    /* Светлорозов фон */
+    background:#f7d8e0;
+
+    /* Розова рамка */
+    border:15px solid #eab3b3;
+
+    /* Прави квадрата ромб */
+    transform:rotate(45deg);
+
+    /* Центриране */
+    margin:0 auto;
+
+    /* Лека сянка */
+    box-shadow:0 0 50px #b58181;
+
+
+
+}
+
+/* Контейнерът за текста */
+.diamond-content{
+
+    /* Запълва ромба */
+    width:100%;
+    height:100%;
+
+    /* Подрежда елементите един под друг */
+    display:flex;
+
+    flex-direction:column;
+
+    /* Центрира вертикално */
+    justify-content:center;
+
+    /* Центрира хоризонтално */
+    align-items:center;
+
+    /* Връща текста изправен */
+    transform:rotate(-45deg);
+
+    /* Центрира текста */
+    text-align:center;
+}
+
+/* Иконката */
+.icon{
+
+    font-size:55px;
+
+    padding-bottom:15px;
+     transform: translateY(-30px);
+}
+
+/* CV */
+.diamond-content h2{
+
+    font-size:38px;
+
+    color:#fffff;
+
+    margin-bottom:7px;
+
+    transform: translateY(-40px);
+
+}
+
+/* АВТОБИОГРАФИЯ */
+.diamond-content h1{
+
+    font-size:38px;
+
+    color:#fffff;
+
+    margin-bottom:7px;
+
+     transform: translateY(-40px);
+
+}
+
+/* Бутони */
+.btn{
+
+    text-decoration:none;
+
+    color:black;
+
+    background:#f3a6b8;
+
+    border:3px #000000;
+
+    border-radius:15px;
+
+    padding:3px 15px;
+
+    margin:5px;
+
+    font-size:19px;
+    
+   transform: translateY(-25px);
+
+}
+
+/* При посочване */
+.btn:hover{
+
+    background:#ff7eb3;
+
+    cursor:pointer;
+}
+
+.divider{
+    /* прави текста по-голям */
+    font-size:18px;
+
+    /* удебелява текста */
+    font-weight:bold;
+
+    /* центрира текста */
+    text-align:center;
+
+    /* разстояние горе и долу */
+    margin:20px 0;
+
+    /* сянка за “магически” ефект */
+    text-shadow:2px 2px 8px rgba(0,0,0,0.4);
+
+    /* леко розов цвят */
+    color:#fffff;
+}
+
+.dividerUnderCV {
+    font-size:18px;
+
+    /* удебелява текста */
+    font-weight:bold;
+
+    /* центрира текста */
+    text-align:center;
+
+    /* разстояние горе и долу */
+    margin:20px 0;
+
+    /* сянка за “магически” ефект */
+    text-shadow:2px 2px 8px rgba(0,0,0,0.4);
+
+    /* леко розов цвят */
+    color:#fffff;
+
+    transform: translateY(70px);
+
+
+}

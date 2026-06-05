@@ -1,0 +1,149 @@
+*{
+
+    /* Премахва автоматичните отстояния */
+    margin:0;
+
+    /* Премахва автоматичните вътрешни отстояния */
+    padding:0;
+
+    /* Размерът включва border и padding */
+    box-sizing:border-box;
+
+    font-family:'Cormorant Garamond', serif;
+}
+
+/* Цялата страница */
+body{
+
+    background-image: url("Снимки/Фон.png");
+    background-repeat: repeat;
+    background-position: top left;
+
+    /* Центрира текста */
+    text-align:center;
+
+    /* Основен шрифт */
+    font-family:'Cormorant Garamond', serif;
+}
+
+/* Горният банер */
+.banner{
+
+    /* Височина на банера */
+    height:220px;
+
+    /* Използва снимка */
+    background-image:url("Снимки/Банер1.jpg");
+
+    /* Центрира снимката */
+    background-position:center;
+
+    /* Запълва целия банер */
+    background-size:cover;
+
+    /* Да не се повтаря */
+    background-repeat:no-repeat;
+}
+
+/* Менюто */
+nav{
+
+   /* прави менюто хоризонтално подредено */
+    display:flex;
+
+    /* подравнява елементите по вертикала (по средата) */
+    align-items:center;
+
+    /* разпределя елементите равномерно по ширината */
+    justify-content:space-around;
+
+    /* фон на менюто */
+    background:#e8c5c5;
+
+    /* вътрешно разстояние */
+    padding:10px;
+
+    /* долна линия */
+    border-bottom:2px solid black;
+
+    /* сянка за ефект */
+    box-shadow:0 2px 10px rgba(0,0,0,0.25);
+}
+
+/* Всички линкове */
+nav a{
+
+    /* маха подчертаването */
+    text-decoration:none;
+
+    /* цвят на текста */
+    color:black;
+
+    /* прави текста по-голям */
+    font-size:24px;
+
+    /* прави буквите по-дебели */
+    font-weight:bold;
+
+    /* вътрешно разстояние около текста */
+    padding:15px 20px;
+
+    /* плавен ефект при hover */
+    transition:0.3s;
+}
+
+/* При посочване */
+nav a:hover{
+    transform:scale(1.1);
+
+    color:#ff7eb3;
+    
+}
+
+/* Сърчицата */
+.heart{
+
+    /* Размер */
+    font-size:70px;
+
+    /* Черен цвят */
+    color:black;
+}
+
+/* Контейнер на снимката */
+.profile{
+
+    /* Кръг */
+    border-radius:50%;
+
+    /* Скрива излизащото извън кръга */
+    overflow:hidden;
+
+    /* Черна рамка */
+    border:8px solid black;
+
+    /* Размер */
+    width:240px;
+
+    /* Размер */
+    height:240px;
+
+    /* Повдига снимката */
+    margin-top:-130px;
+
+    /* Фон ако няма снимка */
+    background:white;
+}
+
+/* Самата снимка */
+.profile img{
+
+    /* Запълва контейнера */
+    width:100%;
+
+    /* Запълва контейнера */
+    height:100%;
+
+    /* Реже снимката красиво */
+    object-fit:cover;
+}

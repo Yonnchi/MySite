@@ -1,0 +1,280 @@
+/* Избира всички елементи */
+*{
+
+    /* Премахва автоматичните отстояния */
+    margin:0;
+
+    /* Премахва автоматичните вътрешни отстояния */
+    padding:0;
+
+    /* Размерът включва border и padding */
+    box-sizing:border-box;
+
+    font-family:'Cormorant Garamond', serif;
+}
+
+/* Цялата страница */
+body{
+
+    background-image: url("Снимки/Фон.png");
+    background-repeat: repeat;
+    background-position: top left;
+
+    /* Центрира текста */
+    text-align:center;
+
+    /* Основен шрифт */
+    font-family:'Cormorant Garamond', serif;
+}
+
+/* Горният банер */
+.banner{
+
+    /* Височина на банера */
+    height:220px;
+
+    /* Използва снимка */
+    background-image:url("Снимки/Банер1.jpg");
+
+    /* Центрира снимката */
+    background-position:center;
+
+    /* Запълва целия банер */
+    background-size:cover;
+
+    /* Да не се повтаря */
+    background-repeat:no-repeat;
+}
+
+/* Менюто */
+nav{
+
+   /* прави менюто хоризонтално подредено */
+    display:flex;
+
+    /* подравнява елементите по вертикала (по средата) */
+    align-items:center;
+
+    /* разпределя елементите равномерно по ширината */
+    justify-content:space-around;
+
+    /* фон на менюто */
+    background:#e8c5c5;
+
+    /* вътрешно разстояние */
+    padding:10px;
+
+    /* долна линия */
+    border-bottom:2px solid black;
+
+    /* сянка за ефект */
+    box-shadow:0 2px 10px rgba(0,0,0,0.25);
+}
+
+/* Всички линкове */
+nav a{
+
+    /* маха подчертаването */
+    text-decoration:none;
+
+    /* цвят на текста */
+    color:black;
+
+    /* прави текста по-голям */
+    font-size:24px;
+
+    /* прави буквите по-дебели */
+    font-weight:bold;
+
+    /* вътрешно разстояние около текста */
+    padding:15px 20px;
+
+    /* плавен ефект при hover */
+    transition:0.3s;
+}
+
+/* При посочване */
+nav a:hover{
+    transform:scale(1.1);
+
+    color:#ff7eb3;
+    
+}
+
+/* Сърчицата */
+.heart{
+
+    /* Размер */
+    font-size:70px;
+
+    /* Черен цвят */
+    color:black;
+}
+
+/* Контейнер на снимката */
+.profile{
+
+    /* Кръг */
+    border-radius:50%;
+
+    /* Скрива излизащото извън кръга */
+    overflow:hidden;
+
+    /* Черна рамка */
+    border:8px solid black;
+
+    /* Размер */
+    width:240px;
+
+    /* Размер */
+    height:240px;
+
+    /* Повдига снимката */
+    margin-top:-130px;
+
+    /* Фон ако няма снимка */
+    background:white;
+}
+
+/* Самата снимка */
+.profile img{
+
+    /* Запълва контейнера */
+    width:100%;
+
+    /* Запълва контейнера */
+    height:100%;
+
+    /* Реже снимката красиво */
+    object-fit:cover;
+}
+
+/* Името */
+.name{
+
+    /* Размер */
+    font-size:70px;
+
+    /* Светлорозов цвят */
+    color:#fffff;
+
+    /* Разстояние отгоре */
+    margin-top:20px;
+
+    /* Разстояние отдолу */
+    margin-bottom:20px;
+}
+
+/* Представяне */
+.intro{
+
+    /* Размер на текста */
+    font-size:24px;
+
+    /* Разстояние между редовете */
+    line-height:1.8;
+
+    /* Външно разстояние */
+    margin-bottom:60px;
+}
+
+.divider{
+    /* прави текста по-голям */
+    font-size:28px;
+
+    /* удебелява текста */
+    font-weight:bold;
+
+    /* центрира текста */
+    text-align:center;
+
+    /* разстояние горе и долу */
+    margin:20px 0;
+
+    /* сянка за “магически” ефект */
+    text-shadow:2px 2px 8px rgba(0,0,0,0.4);
+
+    /* леко розов цвят */
+    color:#fffff;
+}
+
+.buttons{
+    /* подрежда картите една до друга */
+    display:flex;
+
+    /* центрира */
+    justify-content:center;
+
+    /* разстояние между тях */
+    gap:60px;
+
+    /* разстояние отгоре */
+    margin-top:30px;
+
+    /* ако е малък екран → стават надолу */
+    flex-wrap:wrap;
+}
+
+.card{
+    /* фон */
+    background:white;
+
+    /* размер */
+    width:250px;
+
+    /* вътрешно разстояние */
+    padding:20px;
+
+    /* заоблени ъгли */
+    border-radius:15px;
+
+    /* рамка */
+    border:2px solid #ffb6c1;
+
+    /* сянка */
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+    /* центриране на текст */
+    text-align:center;
+
+    /* анимация */
+    transition:0.3s;
+}
+
+.card:hover{
+    /* леко се вдига */
+    transform:translateY(-10px);
+
+    /* по-силна сянка */
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.card button:hover{
+    background:#ff4f91;
+}
+
+.card button{
+    background:#e8c5c5;
+
+    /* прави бутона по-голям (вътрешно пространство) */
+    padding:15px 25px;
+
+    /* прави текста по-голям */
+    font-size:16px;
+
+    /* заобляне (по-яко изглежда) */
+    border-radius:10px;
+
+    /* маха рамка */
+    border:none;
+
+    /* отстояние от текста горе */
+    margin-top:20px;
+
+    /* курсор като ръчичка */
+    cursor:pointer;
+
+    /* плавен ефект */
+    transition:0.3s;
+}
+
