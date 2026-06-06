@@ -345,3 +345,110 @@ nav a:hover{
 
 
 }
+
+.Projects h1{
+
+    font-size:50px;
+    margin-bottom:25px;
+    color:black;
+     margin-top:100px;
+}
+
+.Projects p{
+
+    font-size:26px;
+    line-height:1.6;
+    color:#fffff;
+}
+
+/* Външен контейнер за кутиите */
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap; /* Позволява на кутиите да минат една под друга на телефон */
+  justify-content: center;
+  gap: 30px; /* Разстояние между двете кутии */
+  padding: 20px;
+  font-family: sans-serif; /* Базов изчистен шрифт */
+}
+
+/* Основната кутия (карта) */
+.portfolio-card {
+  width: 380px; /* Фиксирана ширина, близка до пропорциите от картинката */
+  background-color: #FFF0F3; /* Светло розовия фон на долната част */
+  border: 4px solid #DBA1B0; /* Розовият контур */
+  border-radius: 40px; /* Заоблянето на цялата кутия */
+  overflow: hidden; /* Скрива излишното, за да се запази заоблянето */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Лека сянка за дълбочина */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Горната част за снимката */
+.card-image-area {
+  background-color: #FFFFFF; /* Бял фон, ако снимката е прозрачна */
+  height: 200px; /* Височина на секцията за снимка */
+  border-bottom: 4px solid #DBA1B0; /* Линията, която разделя снимката от текста */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Стил за самата снимка вътре */
+.card-image-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Снимката запълва мястото, без да се разпъва грозно */
+}
+
+/* Долната част с текста и бутона */
+.card-info-area {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* Текстът с описанието */
+.card-description {
+  color: #000000;
+  font-size: 16px;
+  margin: 0 0 20px 0; /* Разстояние само отдолу, към бутона */
+  line-height: 1.4;
+}
+
+/* Контейнер за заобленото дъно около бутона */
+.card-button-area {
+  width: 100%;
+  padding: 15px 0;
+  /* Прави вътрешно заобляне на самото дъно, повтаряйки дизайна */
+  border-top: 2px solid rgba(219, 161, 176, 0.3); 
+  display: flex;
+  justify-content: center;
+}
+
+/* Самият бутон */
+.portfolio-btn {
+  display: inline-block;
+  background-color: #DBA1B0; /* Цвеът на бутона от картинката */
+  color: #000000; /* Черен текст */
+  text-decoration: none; /* Премахва долната черта на линка */
+  padding: 12px 35px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 15px; /* Заобляне на бутона */
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  cursor: pointer;
+}
+
+/* Ефект при посочване с мишката (Hover) */
+.portfolio-btn:hover {
+  background-color: #C98B9B; /* Малко по-тъмно розово при посочване */
+}
+
+/* Ефект при кликване */
+.portfolio-btn:active {
+  transform: scale(0.97); /* Леко се свива за усещане на натискане */
+}
