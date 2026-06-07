@@ -278,3 +278,7 @@ nav a:hover{
     transition:0.3s;
 }
 
+.butonce {
+    text-decoration: none;
+    color: #af8282;
+}
