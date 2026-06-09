@@ -199,3 +199,57 @@ nav a:hover{
     text-decoration: none;
     color: #5e3d3d;
 }
+
+/* Връщаме кутията на картата да се подрежда в линия с останалите, БЕЗ да чупи сайта */
+.image-preview-card {
+    display: inline-block; /* Подрежда ги една до друга безопасно */
+    vertical-align: top; /* Изравнява ги по горния край */
+    width: 320px; /* Ширина на кутията */
+    margin: 15px; /* Разстояние между самите карти */
+    text-align: center; /* Центрира съдържанието вътре */
+    box-sizing: border-box;
+}
+
+/* Рамката за снимката */
+.image-frame-box {
+    width: 100%;
+    height: 220px;
+    background-color: #ffffff;
+    border: 4px solid #e2b3c0;
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex; /* Този flex е само за центриране на снимката вътре в кутията, той не пречи на сайта */
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Снимката вътре в рамката */
+.inner-preview-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    font-family: 'Cormorant Garamond', serif;
+    color: #e2b3c0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ЗАГЛАВИЕТО-ЛИНК (с по-тъмния цвят и БЕЗ flex) */
+.image-bottom-title {
+    display: block; /* Заглавието пада на нов ред под снимката */
+    margin: 15px 0 0 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #a3727e; /* Тъмният цвят */
+    text-decoration: none; /* Без долна черта */
+    text-align: center;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+/* Ефект при посочване */
+.image-bottom-title:hover {
+    color: #82545f;
+    transform: translateY(-2px);
+}
